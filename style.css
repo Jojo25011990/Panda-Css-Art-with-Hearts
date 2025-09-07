@@ -1,0 +1,382 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Heading Primary */
+.heading__primary {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+
+	font-size: 70px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* End of Heading Primary */
+
+/* Heading Secondary */
+.heading__secondary {
+	position: absolute;
+	top: 60%;
+	left: 10%;
+
+	font-size: 30px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+	border-bottom: 2px solid black;
+}
+/* End of Heading Secondary */
+
+/* Heading Tertiary */
+.heading__tertiary {
+	position: absolute;
+	top: 45%;
+	right: 20%;
+
+	font-size: 90px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.heading__tertiary span {
+	display: block;
+}
+/* End of Heading Tertiary */
+
+/* Panda */
+.panda {
+	position: relative;
+	width: 500px;
+	height: 750px;
+}
+
+/* Panda Head */
+.panda__head {
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	transform: translateX(-50%) rotate(15deg);
+	width: 300px;
+	height: 220px;
+	z-index: 50;
+	border: 7px solid black;
+	background-color: white;
+	border-radius: 9rem 9rem 6rem 6rem;
+}
+/* End of Panda Head */
+
+/* Panda Ears */
+.panda__ear {
+	position: absolute;
+	top: 5%;
+	width: 100px;
+	height: 60px;
+	background-color: black;
+	border-radius: 3.8rem 3.8rem 0 0;
+}
+
+.panda__ear-left {
+	left: 22%;
+	transform: rotate(-25deg);
+}
+.panda__ear-right {
+	top: 13.1%;
+	right: 12%;
+	transform: rotate(53deg);
+}
+/* End of Panda Ears */
+
+/* Panda Eyes */
+.panda__eye {
+	position: absolute;
+	top: 20%;
+	z-index: 100;
+	width: 60px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.panda__eye-left {
+	left: 30%;
+	transform: rotate(35deg);
+}
+
+.panda__eye-left::before {
+	content: "";
+	position: absolute;
+	bottom: 45%;
+	right: 20%;
+	width: 12px;
+	height: 17px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.panda__eye-left::after {
+	content: "";
+	position: absolute;
+	bottom: -50%;
+	left: -6%;
+	width: 40px;
+	height: 40px;
+	z-index: 80;
+	border-radius: 50%;
+	background-color: pink;
+}
+.panda__eye-right {
+	top: 25%;
+	right: 32%;
+	transform: rotate(-0deg);
+}
+
+.panda__eye-right::before {
+	content: "";
+	position: absolute;
+	bottom: 45%;
+	left: 20%;
+	width: 12px;
+	height: 17px;
+	border-radius: 50%;
+	background-color: white;
+}
+.panda__eye-right::after {
+	content: "";
+	position: absolute;
+	bottom: -49%;
+	left: 46%;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: pink;
+}
+/* End of Panda Eyes */
+
+/* Panda Nose */
+.panda__nose {
+	position: absolute;
+	top: 30%;
+	left: 47.8%;
+	transform: translate(-47.8%, -30%) rotate(15deg);
+	z-index: 100;
+	background-color: black;
+	width: 30px;
+	height: 20px;
+	border-radius: 1.5rem 1.5rem 4rem 4rem;
+}
+/* End of Panda Nose */
+
+/* Panda Mouth */
+.panda__mouth-01 {
+	position: absolute;
+	top: 31%;
+	left: 47.1%;
+	transform: translateX(-47.1%) rotate(15deg);
+	width: 10px;
+	height: 20px;
+	z-index: 100;
+	background-color: black;
+}
+
+.panda__mouth-02 {
+	position: absolute;
+	top: 33%;
+	top: 32.2%;
+	left: 43.3%;
+	transform: translateX(-47.1%) rotate(21deg);
+	width: 20px;
+	height: 10px;
+	border: 10px solid #000;
+	border-top: none;
+	border-radius: 0 0 40px 40px;
+	z-index: 100;
+}
+.panda__mouth-03 {
+	position: absolute;
+	top: 33.3%;
+	right: 42.6%;
+	transform: translateX(-47.1%) rotate(10deg);
+	width: 20px;
+	height: 10px;
+	border: 10px solid #000;
+	border-top: none;
+	border-radius: 0 0 40px 40px;
+	z-index: 100;
+}
+/* End of Panda Mouth */
+
+/* Panda Body */
+.panda__body {
+	position: absolute;
+	top: 40%;
+	left: 33%;
+	transform: translateX(-40%) rotate(12deg);
+	z-index: 40;
+	width: 280px;
+	height: 258px;
+	background-color: white;
+	border: 7px solid black;
+	border-radius: 0 0 9rem 9rem;
+}
+
+.panda__body::before {
+	content: "";
+	position: absolute;
+	top: -5%;
+	left: -1%;
+	width: 100%;
+	height: 38%;
+	background-color: black;
+}
+/* End of Panda Body */
+
+/* Panda Hand */
+.panda__hand {
+	position: absolute;
+	z-index: 45;
+	width: 120px;
+	height: 209px;
+	background-color: black;
+	border-radius: 50%/0 0 9rem 9rem;
+	background-color: black;
+}
+
+.panda__hand-left {
+	top: 19%;
+	left: 0%;
+	transform: rotate(140deg);
+}
+
+.panda__hand-right {
+	top: 41%;
+	right: 16%;
+	transform: rotate(-30deg);
+	border-radius: 50% / 0rem 0rem 9rem 9rem;
+}
+/* End of Panda Hand */
+
+/* Panda Feet */
+.panda__foot {
+	position: absolute;
+	bottom: 9%;
+	z-index: 30;
+	width: 120px;
+	height: 250px;
+	background-color: black;
+	border-radius: 50%/0 0 7rem 7rem;
+}
+
+.panda__foot-left {
+	left: 10%;
+}
+.panda__foot-right {
+	bottom: 11%;
+	right: 31.1%;
+}
+/* Panda Feet */
+
+/* End of Panda */
+
+/* Hearts */
+.heart-01 {
+	position: absolute;
+	top: 200px;
+	left: 650px;
+	width: 50px;
+	height: 50px;
+	scale: 0.8;
+}
+
+.heart-01::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 100%;
+	background-color: red;
+	transform: rotate(-45deg);
+	border-radius: 4rem 4rem 0 0;
+}
+.heart-01::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 6px;
+	width: 30px;
+	height: 100%;
+	background-color: red;
+	transform: rotate(45deg);
+	border-radius: 4rem 4rem 0 0;
+}
+
+.heart-02 {
+	position: absolute;
+	top: 162px;
+	left: 614px;
+	width: 50px;
+	height: 50px;
+	scale: 1;
+}
+
+.heart-02::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 100%;
+	background-color: red;
+	transform: rotate(-45deg);
+	border-radius: 4rem 4rem 0 0;
+}
+.heart-02::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 6px;
+	width: 30px;
+	height: 100%;
+	background-color: red;
+	transform: rotate(45deg);
+	border-radius: 4rem 4rem 0 0;
+}
+
+.heart-03 {
+	position: absolute;
+	top: 112px;
+	left: 575px;
+	width: 50px;
+	height: 50px;
+	scale: 1.2;
+}
+
+.heart-03::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 100%;
+	background-color: red;
+	transform: rotate(-45deg);
+	border-radius: 4rem 4rem 0 0;
+}
+.heart-03::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 6px;
+	width: 30px;
+	height: 100%;
+	background-color: red;
+	transform: rotate(45deg);
+	border-radius: 4rem 4rem 0 0;
+}
+/* End of Hearts */
