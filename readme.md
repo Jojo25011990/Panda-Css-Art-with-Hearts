@@ -1,4 +1,4 @@
-# CSS Art Image - Mickey Mouse
+# CSS Art Image - Panda with Hearts
 
 -   This project is part of my personal CSS Art gallery. It’s designed as a static visual piece (like an image), not optimized for responsiveness or mobile – desktop only. Created with HTML5 + CSS3.
 
